@@ -11,6 +11,8 @@
 ![IPyKernel version](https://img.shields.io/badge/IPyKernel-v6.29.4-yellow)
 ![License](https://img.shields.io/badge/License-MIT-darkblue)
 
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
 This is an original project by I Putu Krisna Erlangga, but it has been modified to control a wheelchair.
 
 This project is still under development. It involves controlling the wheelchair with an invisible steering wheel, using hand gestures as if steering. The approach utilizes an LSTM model to send output to the wheelchair, corresponding to the five available classes.
