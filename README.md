@@ -1,19 +1,6 @@
+[![universal-personal-banner1](fileagung3.png)](https://www.agungg.com/)
+
 # Wheelchair Control System Using Invisible Steering Gesture Based on LSTM
-
-🚀This is an original project by I Putu Krisna Erlangga, but it has been modified to control a wheelchair.
-
-This project is still under development. It involves controlling the wheelchair with an invisible steering wheel, using hand gestures as if steering. The approach utilizes an LSTM model to send output to the wheelchair, corresponding to the five available classes.
-
-## 🎬 Demo
-
-![mantap](https://github.com/user-attachments/assets/dad0701e-425c-4b3d-8604-a94cfa2fa1b4)
-
-<img alt="Static Badge" src="https://img.shields.io/badge/Youtube-red?style=flat-square&logo=youtube&link=https%3A%2F%2Fyoutu.be%2FO69vtuBGGe4%3Ffeature%3Dshared">
-
-
-## 🔨 Installation
-
-PyPi version
 
 ![Scikit-learn version](https://img.shields.io/badge/scikitlearn-v1.5.1-black)
 ![Keras version](https://img.shields.io/badge/Keras-v3.5.0-purple)
@@ -22,6 +9,19 @@ PyPi version
 ![Tensorflow version](https://img.shields.io/badge/Tensorflow-v2.10.1-orange)
 ![OpenCV version](https://img.shields.io/badge/OpenCV-v4.9.0.80-green)
 ![IPyKernel version](https://img.shields.io/badge/IPyKernel-v6.29.4-yellow)
+![License](https://img.shields.io/badge/License-MIT-darkblue)
+
+This is an original project by I Putu Krisna Erlangga, but it has been modified to control a wheelchair.
+
+This project is still under development. It involves controlling the wheelchair with an invisible steering wheel, using hand gestures as if steering. The approach utilizes an LSTM model to send output to the wheelchair, corresponding to the five available classes.
+
+## Project Result
+
+[![mantap](https://github.com/user-attachments/assets/dad0701e-425c-4b3d-8604-a94cfa2fa1b4)](https://youtu.be/O69vtuBGGe4)
+
+[![YouTube](https://img.shields.io/badge/YouTube-black?style=flat-square&logo=youtube)](https://youtu.be/O69vtuBGGe4)
+
+## Installation
 
 Please use seperate file for collecting dataset and training also use seperate folder for control. venv setup for training
 
@@ -65,7 +65,7 @@ run all cell on AMBIL_DATASET_AGUNG. it should open camera feed like this.
 
 after you normalized the dataset you can start training the model
 
-## 💬 Feedback
+## Feedback
 
 <img alt="Static Badge" src="https://img.shields.io/badge/krsx-black?style=social&logo=github&link=https%3A%2F%2Fgithub.com%2Fkrsx">
 It is better to use a CNN-LSTM approach.
