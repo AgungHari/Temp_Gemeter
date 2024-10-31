@@ -1,4 +1,4 @@
-[![universal-personal-banner1](fileagung3.png)](https://www.agungg.com/)
+[![banner4](banner4.png)](https://www.agungg.com/)
 
 # Wheelchair Control System Using Invisible Steering Gesture Based on LSTM
 
