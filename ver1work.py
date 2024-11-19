@@ -7,8 +7,8 @@ import math
 import socket
 from tensorflow.keras.models import load_model
 
-host = "192.168.4.1"
-port = 80
+host = "192.168.18.126"
+port = 8080
 
 class SocketCommunicator:
     def __init__(self, host, port) -> None:
@@ -43,7 +43,7 @@ mp_pose = mp.solutions.pose
 holistic_model = mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
 # Kelas yang digunakan: Kanan, Maju, Stop, Mundur, Kiri
-actions = np.array(['Kanan', 'Maju', 'Stop', 'Mundur', 'Kiri'])
+actions = np.array(["Kanan","Kiri","Maju","Mundur","Stop"]) #
 
 sequence = []
 predictions = []
@@ -106,7 +106,7 @@ def extract_keypoints_normalize(results):
 # Fungsi untuk memuat model LSTM yang sudah dilatih
 def load_lstm_model():
     # Muat model lengkap dengan arsitektur dan bobot dari file .keras
-    model = load_model('agung.keras')  # Ganti dengan path model LSTM kamu
+    model = load_model('model\model_5_lstm_10042024_1.h5')  # Ganti dengan path model LSTM kamu
     return model
 
 # Muat model
@@ -127,10 +127,10 @@ while cap.isOpened():
     # Ekstraksi keypoints dan masukkan ke dalam sequence
     keypoints = extract_keypoints_normalize(results)
     sequence.append(keypoints)
-    sequence = sequence[-30:]
+    sequence = sequence[-50:]
 
     # Prediksi jika sequence sudah lengkap (30 frame)
-    if len(sequence) == 30:
+    if len(sequence) == 50:
         res = lstm_model.predict(np.expand_dims(sequence, axis=0))[0]
         
         # Jika confidence lebih dari threshold, tampilkan prediksi
